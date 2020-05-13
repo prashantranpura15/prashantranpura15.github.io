@@ -1,10 +1,127 @@
-h1{
-	font-family: Arial;
-	color: blue;
+
+
+header{
+	font-family: Arial;linear-gradient
+	color: #171a1b;
+	font-style: normal;
+	font-family: "Courier";
+	background-color:#9cabaf;
+	border: 5px solid #000;
+	padding: 20px;
+	margin:25px;
+	background-image:linear-gradient(#fdc5ff,white);
+	transition:  2s linear;
 }
+
+
 h2{
-    color: purple;
+    color: #fffff;
+	font-variant: small-caps;
+	text-decoration:underline overline;
+	text-shadow: 2px 1px #4e494a;
  }
-body{
-    background-color: #4acff3;	
+ #pk{
+	 border: 1px solid grey;
+	 padding: 3px;
+	 border-radius: 20px 40px;
+ }
+ /*nav{
+	 font-family:"Times new Roman";
+	 text-align: center;
+ }*/
+ nav{
+	box-sizing:border-box;
+	border: 1px solid #06425C;
+	border-radius :50px 50px;
+	color:#06425C;
+	background-image:linear-gradient(#71154e,white);
+	display: inline-block;
+	width: 20%;
+	min-width: 125px;
+	margin-right:15px;
+	height:50vh;
+	overflow: auto;
+}
+
+nav a{
+	display:block;
+	line-height: 20px;
+	height:50px;
+	color: #FFFFFF;
+	background-color:#486B02;
+	text-decoration: none;
+	background-color:#486B02;
+	background: url('../imgs/arrow.png') no-repeat;
+	padding-left: 50px;
+	margin:10px 0 10px 5px;
+	text-align: left;
+}
+nav>li>first-child:hover{
+	display: block;
+}
+ body{
+	/* background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg");*/
+     display: inline-block;
+ }
+ .cr{
+	 font-size: 150%;
+ }
+ ul{
+	 font-size:120%;
+ }
+ .pr
+ {
+	width:30%;
+	height: 400px;;
+    display: inline-block;
+	margin: 5px;
+	padding-right:10px;
+	overflow : scroll;
+ }
+progress{
+	border: 5px solid #000;
+}
+section{
+	display: inline-block;
+	margin:5px;
+	padding:5px;
+}
+a{
+	color: black;
+	margin:10px;
+	background-color:#d917e0;
+	border: 1px #fff;
+    transition:  1s linear;
+	-webkit-transition: 2s ease;
+}
+a:hover {
+	background-color:lightblue;
+	font-size:200%;
+	height: 70px;
+	transition: height 1s linear;
+}
+footer{
+    height:100px;
+	display:inline-block;
+}
+img{
+	width: 75px;
+}
+body {
+    background: linear-gradient(-30deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease;
+	animation-iteration-count: infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
