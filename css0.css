@@ -10,7 +10,6 @@ header{
 	padding: 20px;
 	margin:25px;
 	background-image:linear-gradient(#fdc5ff,white);
-	transition:  2s linear;
 }
 
 
@@ -25,39 +24,83 @@ h2{
 	 padding: 3px;
 	 border-radius: 20px 40px;
  }
- /*nav{
-	 font-family:"Times new Roman";
-	 text-align: center;
- }*/
  nav{
-	box-sizing:border-box;
-	border: 1px solid #06425C;
-	border-radius :50px 50px;
-	color:#06425C;
-	background-image:linear-gradient(#71154e,white);
-	display: inline-block;
-	width: 20%;
-	min-width: 125px;
-	margin-right:15px;
-	height:50vh;
-	overflow: auto;
+	 font-size:15px;
+ }
+nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-nav a{
-	display:block;
-	line-height: 20px;
-	height:50px;
-	color: #FFFFFF;
-	background-color:#486B02;
-	text-decoration: none;
-	background-color:#486B02;
-	background: url('../imgs/arrow.png') no-repeat;
-	padding-left: 50px;
-	margin:10px 0 10px 5px;
-	text-align: left;
+nav li {
+    width: 30%;
+    border-right: 3px solid yellow;
+    height: 50px;
+    line-height: 50px;
+    font-size: 140%;
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+nav li:last-child{
+	    border-right: none;
 }
-nav>li>first-child:hover{
-	display: block;
+
+nav li li{
+	    border-right: none;
+}
+
+/*nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding-left: 15px;
+  transition: 5s background-color;
+}*/
+
+nav a:hover {
+  background-color: #005f5f;
+}
+
+nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+/* Sub Menus */
+nav li li {
+  font-size: .8em;
+}
+
+nav > ul > li {
+   text-align: center;
+}
+
+nav > ul > li > a {
+    padding-left: 0;
+}
+
+/* Sub Menus */
+nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+nav li:hover ul {
+   display: block;
+}
+
+nav li ul li {
+   display: block;
+ }
+
+form{
+	width:40%;
 }
  body{
 	/* background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg");*/
@@ -98,7 +141,6 @@ a:hover {
 	background-color:lightblue;
 	font-size:200%;
 	height: 70px;
-	transition: height 1s linear;
 }
 footer{
     height:100px;
@@ -108,7 +150,7 @@ img{
 	width: 75px;
 }
 body {
-    background: linear-gradient(-30deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease;
 	animation-iteration-count: infinite;
@@ -124,4 +166,65 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+input[type=email]{
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 30%;
+  border: 1px solid #333;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 90%;
+
+  box-sizing: border-box;
+}
+
+/* This is our style for the invalid fields */
+input:invalid{
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+  width  : 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+.opened{
+	display: block;
+}
+.closed{
+	display: none;
+}
+#image{
+    line-height:650px;
+		width: 575px;
+    height: 50%;
+		border:5px solid black;
+		margin:0 auto;
+    background-color: #8e68ff;
+    background-image: url('');
+    background-repeat: no-repeat;
+    color:#FFFFFF;
+    text-align: center;
+    background-size: 100%;
+    margin-bottom:25px;
+    font-size: 150%;
 }
