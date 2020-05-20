@@ -2,31 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
    <title>
-        assign ex1
+        Website 0.1
     </title>
      <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"  />
-     <link rel="stylesheet" href="prashantranpura15.github.io/css0.css"/>
-	 <style>
-	 </style>
+       <link rel="stylesheet" href="prashantranpura15.github.io/css0.css"/>
 </head>
-<body>
-   <header class="hover">
-         <h1>Colleen van lent & Prashant Ranpura</h1>		 
-      </header>
-	   <nav>
+<body onload=loadfood()>
+   <script>
+        function messsage(msg)
+		{
+		    document.getElementById("demo").innerHTML=msg + "event";
+		}
+	   <!--prompt("enter your name"); 
+	    <!--var name=prompt("enter your name:");
+	   function toopen()
+	   {
+             x=document.getElementById("pk");
+			 x.className='"+opened+"';
+       }	  
+	   function toclose()
+	   {
+	        x=document.getElementById("pk");
+			x.className="closed";
+	   }
+	   function ele(element)
+	   {
+	      document.getElementById("check").innerHTML=element.id;
+	   }
+		var date=Date();
+		document.write(date);
+		function upDate(previewPic)
+{
+     /* In this function you should 
+    1) change the url for the background image of the div with the id = "image" 
+    to the source file of the preview image
+    
+    2) Change the text  of the div with the id = "image" 
+    to the alt text of the preview image 
+    */
+    var x=previewPic.src;
+    document.getElementById('image').innerHTML=previewPic.alt; //previewPic will get "this" variable and so previewPic.alt will point towards the content in alt.
+    document.getElementById('image').style="background-image:url('"+x+"')"; //this url will point towards the src url of this id.
+}
+
+function unDo()
+{
+     /* In this function you should 
+    1) Update the url for the background image of the div with the id = "image" 
+    back to the orginal-image.  You can use the css code to see what that original URL was
+    
+    2) Change the text  of the div with the id = "image" 
+    back to the original text.  You can use the html code to see what that original text was
+    */
+
+    document.getElementById('image').style.backgroundImage = "url('')"; //this will again change the url to the original blank.
+    document.getElementById('image').innerHTML="Hover over an image below to display here."; //again change the content to the original data.
+		
+}
+var foods=["pizza","burger"];
+function loadfood(){
+     /*var food=prompt("enter your favourite food");
+     foods[foods.push(food)];
+     document.getElementById("food").innerHTML=foods;*/
+}
+function check(){
+ var email1=document.getElementById("email_1");
+ var email2=document.getElementById("email_2");
+ if(email1.value != email2.value)
+ {
+     alert("pls check email");
+ }
+}
+   </script>
+   <header>
+         <h1>Colleen van lent & Prashant Ranpura</h1>	
+         <nav>
 	   
 	  <li class"hover">   <a class="cr" href="https://www.wikipedia.org/" target="_blank" class="hover">Wikipedia</a> </li>
        <li><a class="cr" href="https://umich.edu/" target="_blank" class="hover">Umu</a></li>
-       <li><a class="cr" href="https://www.google.com/" target="_blank" class="hover">Google</a></li>
-   </nav>
+       <li><a class="cr" href="https://www.google.com/" target="_blank" class="hover">Google</a>
+	      <ul>
+		      <li><a class="cr" href="https://youtube.com/" target="_blank" class="hover">Youtube</a><li>
+		       <li><a class="cr" href="https://gmail.com/" target="_blank" class="hover">Gmail</a><li>
+		  </ul>
+		  </li>
+   </nav>		 
+      </header>
+	   
+     <div id="check">here it is</div>
     <section>
         <h2 id="pk">Favourite foods</h2>
        <ul>
            <li>Apple</li>
             <li>Orange</li>
              <li>Mangos</li>
+			 <li id="food"></li>
       </ul>
          <h2 id="pk">achievements</h2>
          <label for="f1">Progress in this course(100%)</label>
@@ -34,6 +106,22 @@
          <label for="f2">progress in this specializatin capstone(20%)</lable>
          <progress id="f2" value="20" max="100">20%</progress>	
        </section>		 
+<form>
+   <fieldset>
+    <legend>Personal details</legend>
+   <label for="name">Name</label>
+   <input type="name" name='name' placeholder="enter your name"></input></br>
+   <label name='email1' >Email id<input type="email" id="email_1" placeholder="enter your email id" required></label></input>
+   <label name='email2'>Email id<input type="email"  id="email_2" placeholder="Confirm email id" required onchange="check()" ></label></input>
+   <input type="submit" value="submit"></input>
+   <!--name= used for javascript purpose when we want to extract information from front end-->
+</fieldset>
+</form>
+  <p>
+  </p>
+  <button>Submit</button>
+<button type="button" onclick="toopen()">Open!</button>
+<button type="button" onclick="toclose()">Close!</button>
          <h2>History of ahmedabad</h2>	
          <div>		 
 		 <p class="pr">Ahmedabad is the largest city in the state of Gujarat. It is located in western India on the banks of the River Sabarmati. The city served as political as well as economical capital of the region since its establishment. The earliest settlement can be recorded around the 12th century under Chaulukya dynasty rule. The present city was founded on 26 February 1411 and announced as the capital on 4 March 1411 by Ahmed Shah I of Gujarat Sultanate as a new capital. Under the rule of sultanate (1411–1511) the city prospered followed by decline (1511–1572) when the capital was transferred to Champaner. For next 135 years (1572–1707), the city renewed greatness under the early rulers of Mughal Empire. The city suffered due to political instability (1707–1817) under late Mughal rulers followed by joint rule between Maratha and Mughal. The city further suffered following joint Maratha rule. The city again progressed when politically stabilized when British East India Company established the rule in the city (1818–1857). The city further renewed growth when it gain political freedom by establishment of municipality and opening of railway under British crown rule (1857–1947). Following arrival of Mahatma Gandhi in 1915, the city became centre stage of Indian independence movement. Many activists like Sardar Patel served the municipality of the city before taking part in the movement. After independence, the city was a part of Bombay state. When Gujarat was carved out in 1960, it again became the capital of the state until establishment of Gandhinagar in 1965. Ahmedabad is also the cultural and economical centre of Gujarat and the seventh largest city of India.Zafar Khan Muzaffar (later Muzaffar Shah I) of Muzaffarid dynasty was appointed as governor of Gujarat by Nasir-ud-Din Muhammad bin Tughluq IV in 1391.[2] Zafar Khan's father Sadharan, was a Tanka Rajput convert to Islam, adopted the name Wajih-ul-Mulk, and had given his sister in marriage to Firuz Shah Tughlaq. Zafar Khan defeated Farhat-ul-Mulk near Anhilwad Patan and made the city his capital. When the Sultanate was weakened by the sacking of Delhi by Timur in 1398, and Zafar Khan took the opportunity to establish himself as sultan of an independent Gujarat. He declared himself independent in 1407 and founded the Gujarat Sultanate.[3]
@@ -45,6 +133,17 @@ The story is that the king, by the aid of the saint Shaikh Ahmad Khattu, called 
 The Ahmedabad is a popular settlement near bank of Sabarmati river was earlier known as Ashaval or Ashapalli. In the tenth century Ashaval was one of the chief places in Gujarat as described by Al-Biruni. It was a well peopled, busy, trading, manufacturing and rich town around 1150. In the eleventh century, Karna of Chaulukya dynasty ruling from Anhilwad Patan (1072–1094) made the town his capital, adorned it with two temples, one to Kochrab, the site still known, and the other to Jayanti Devi, and named it Karnavati (Karna's town) or Shrinagar (prosperous city) and Rajnagar (king's town). When Chaulukya rule weakened in the second half of the 13th century, Vaghela dynasty rose to power in Gujarat in 1243. They formed short but stable rule in the region which ended in 1299.[2]</p>
 		
 		 </div>
+		 <button type="button" onclick="messsage('its valid!')">display here</button>
+		 <p id="demo">Output here</p>
+		 <div id="image"> hover image here</div>
+	
+	<img class = "preview" alt = "ironman" src = "http://fc09.deviantart.net/fs70/f/2012/134/3/e/the_avengers___ironman_by_stephencanlas-d4zpaxl.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview" alt = "captian" src = "https://www.aiesec.in/wp-content/uploads/2018/08/Captain-america-1.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview" src = "https://s3.r29static.com/bin/entry/ce2/x,80/2169674/image.jpg" alt = "Thor" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	</div>
      <h2 id="pk">about us</h2>  
        <details>
          <summary>Declaration</summary>
