@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"  />
+<style>
+ .topnav .navbar{
+  overflow: hidden;
+}
+.topnav .icon {
+  display: none;
+}
+   @media screen and (max-width: 600px) {
+    .topnav .navbar a{
+      display: none;
+  }
+  .topnav a.icon {
+    justify-content: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive .navbar{position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive .navbar a {
+    justify-content: left;
+    display: block;
+    text-align: left;
+  }
+   header{
+      border-bottom: hidden;
+   }
+  }
+}
+</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website 0.2</title>
+  <link rel="stylesheet" href="C:\Users\DELL\Documents\webpages0\css5.css">
+</head>
+<body>
+<!--start header-->
+   <header>
+     <div class="contain">
+	   <div class=row">
+	   <div class="brand">
+	     <a href=" " class="logo">Pr0.1</a>
+	   </div>
+	<div class="topnav" id="myTopnav">   
+	 <div class="navbar">
+	    <ul>
+		  <li><a href=" " class="active">Home</li>
+	      <li><a href=" ">Services</li>
+		  <li><a href=" ">Portfolio</li>
+		  <li><a href=" ">Contact me</li> 
+	 </div>
+	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> 
+	   </div>
+	 </div>
+   </div>
+   </header>
+<!--start home-->   
+  <section class="home">
+     <div class="contain">
+	   <div class="row full-screen">
+	      <div class="home-content">
+		  <div class="block">
+		    <h6>Hello My name is</h6>
+			<h1>Prashant Ranpura</h1>
+		 <div class="btn">
+		    <a href="https://drive.google.com/file/d/1dBv4Gj97XQWvoXyDC0QvbCbz1EPxZGJb/view?usp=sharing ">Download CV</a>	
+          </div>		 
+		  </div>
+		 </div>
+	     </div>	 
+	 </div>
+  </section>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
