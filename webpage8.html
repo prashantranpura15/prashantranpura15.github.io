@@ -2,40 +2,7 @@
 <html>
 <head>
  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"  />
-<style>
- .topnav .navbar{
-  overflow: hidden;
-}
-.topnav .icon {
-  display: none;
-}
-   @media screen and (max-width: 600px) {
-    .topnav .navbar a{
-      display: none;
-  }
-  .topnav a.icon {
-    justify-content: right;
-    display: block;
-  }
-}
-@media screen and (max-width: 600px) {
-  .topnav.responsive .navbar{position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive .navbar a {
-    justify-content: left;
-    display: block;
-    text-align: left;
-  }
-   header{
-      border-bottom: hidden;
-   }
-  }
-}
-</style>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Website 0.2</title>
   <link rel="stylesheet" href="prashantranpura15.github.io/css5.css">
@@ -52,11 +19,9 @@
 	 <div class="navbar">
 	    <ul>
 		  <li><a href=" " class="active">Home</li>
-	      <li><a href=" ">Services</li>
-		  <li><a href=" ">Portfolio</li>
-		  <li><a href=" ">Contact me</li> 
+		  <li><a href="#skills">Skills</li>
+		  <li><a href="#about">About Me</li> 
 	 </div>
-	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> 
 	   </div>
 	 </div>
    </div>
@@ -77,7 +42,75 @@
 	     </div>	 
 	 </div>
   </section>
-<script>
+  <!--Skills-->
+  <section class="skills" id="skills">
+    <div class="container">
+	   <div class="row">
+	      <div class="skill-title">
+		    <h1>Professional Skills</h1>
+	      </div>
+	   </div>
+	   <div class="skill-content">
+	      <label for="file">HTML5 & CSS3</label>
+
+          <progress id="file" max="100" value="70"> 70% </progress><br>
+		   <label for="file">SQL</label>
+
+          <progress id="file" max="100" value="65"> 65% </progress><br>
+		   <label for="file">C++</label>
+
+          <progress id="file" max="100" value="80"> 80% </progress><br>
+		   <label for="file">Django</label>
+
+          <progress id="file" max="100" value="60">60%</progress><br>
+		    <label for="file">Arduino IDE</label>
+
+          <progress id="file" max="100" value="90">80%</progress><br>
+		    <label for="file">Python</label>
+
+          <progress id="file" max="100" value="70">70%</progress><br>
+	   </div>
+	</div>
+  </section>
+  <!--About-->
+  <section class="about" id="about">
+     <div class="container">
+	    <div class="row">
+		   <div class="section-title">
+		      <h1>About Me</h1>
+			  <p class="small">Information about me</p>
+		   </div>
+		</div>
+		  	<div class="about-content">
+		      <div class="img">
+		        <img src="https://www.itl.cat/pngfile/big/111-1114272_the-dark-knight-rises-wallpaper-batman-the-dark.jpg">
+			   </div>
+			   <div class="text">
+			    <h2>I am Prashant Ranpura</h2>
+		        <p> I m  final year undergrad student in e.c at l.d engineering of college.  i have good grasp on c/c++, webpage design,sql,algorithms and data structures,django.</p>
+		        <div class="info">
+				  <div class="row">
+				    <ul>
+					 <li class="list">
+				     <label>Birthday:</label>
+					 <p>14/5/2000</p></li>
+					  <li class="list">
+					 <label>Email id:</label>
+					 <p>prashatranpura15@gmail.com</p></li>
+					  <li class="list">
+					 <label>Age:</label>
+					 <p>21</p></li>
+					  <li class="list">
+					 <label>Linkedin id:</label>
+					 <p>https://www.linkedin.com/prashantranpura</p></li>
+					</ul>
+				  </div>
+				</div>
+			  </div>	
+		  </div>
+	 </div>
+  </section>
+<!-- <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -86,5 +119,5 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-</script>
+</script> -->
 </body>
