@@ -11,6 +11,7 @@ body{
 	box-sizing: border-box;
 	margin: 0;	
 }
+/*
 .navs{
 	height: 100%;
 	width: 0;
@@ -41,7 +42,7 @@ body{
 	color: white;
 	font-size:20px;
 	float : right;
-}
+}*/
 .contain
 {
 	max-width: 1140px;
