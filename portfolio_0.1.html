@@ -6,23 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio_0.1</title>
   <link rel="stylesheet" href="prashantranpura15.github.io/css5.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+   <script>
+  
+      function openSlideMenu(){
+         document.getElementById('menu').style.width = '100px';
+         document.getElementById('content').style.marginLeft = '100px';
+      }
+      function closeSlideMenu(){
+          document.getElementById('menu').style.width = '0';
+          document.getElementById('content').style.marginLeft = '0';
+      }
+ 
+</script>
 </head>
 <body>
+<div class="content">	
 <!--start header-->
    <header>
      <div class="contain">
 	   <div class=row">
 	   <div class="brand">
 	     <a href=" " class="logo">Pr0.1</a>
-	   </div>
-	<div class="topnav" id="myTopnav">   
+	   </div> 
+	
+	   <span class="slide">
+      <a href="#" onclick="openSlideMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </span>
+	 <div id="menu" class="navs">
+	     <a href="#" class="close" onclick="closeSlideMenu()">
+        <i class="fas fa-times"></i>
+      </a>
 	 <div class="navbar">
 	    <ul>
 		  <li><a href=" " class="active">Home</li>
 		  <li><a href="#skills">Skills</li>
 		  <li><a href="#about">About Me</li> 
+		  <li><a href="#">Projects</li>		      
 	 </div>
-	   </div>
+       </div>
 	 </div>
    </div>
    </header>
@@ -120,4 +144,5 @@ function myFunction() {
   }
 }
 </script> -->
+</div>
 </body>
