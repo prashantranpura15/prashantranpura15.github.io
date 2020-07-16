@@ -1,14 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+
 
 body{
 	margin:0;
 	font-family: 'Poppins', sans-serif;
+	overflow-x:hidden;
 }
 *{
 	box-sizing: border-box;
 	margin: 0;	
 }
+.navs{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index:1;
+	opacity: 1.56;
+	background-color:	#808080;
+	overflow-x:hidden;
+	top:0;
+	right:0;
+	opacity: 0.7;
+	padding-top:30px;
+	transition: 0.7s;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 200;
+	color: white;	
+}
 
+.navs .close{
+	position: absolute;
+	top:0;
+	right:10px;
+	color: white;
+	font-size:20px;
+	
+}
+.slide a{
+	color: white;
+	font-size:20px;
+	float : right;
+}
 .contain
 {
 	max-width: 1140px;
@@ -206,6 +239,7 @@ header .navbar ul li a.active::before{
 	max-width: calc(50% - 15%);
 	padding-bottom: 2px;
 }
+
 .skills .skill-title{
 	padding-top:20px;
 	padding-bottom:10px;
