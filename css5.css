@@ -78,6 +78,7 @@ header .brand a{
 	color: #000;
     text-transform: uppercase;
 	position: relative;
+	overflow:hidden;
  }
 header .brand a:before{
 	content:' ';
@@ -130,7 +131,8 @@ header .navbar ul li a.active::before{
 }
 /* Home */
 .home{
-	/*min-height: 100vh;*/
+	min-height: 20vh;
+	padding-top: 60px;
 	background-color: white;
 	background-position: center;
 	background-size: cover;
@@ -227,8 +229,8 @@ header .navbar ul li a.active::before{
 	max-width: 33.33%;
 }
 .about .about-content .img img{
-	height: 500px;
-	width: 100%;
+	height: 200px;
+	width: 200px
 	display: block;
 }
 .about .about-content .text{
@@ -236,13 +238,13 @@ header .navbar ul li a.active::before{
 	max-width: 66.66%;
 	padding-left: 20px;
 }
-.about .about-content .text .info ul{
+.about .about-content  .info ul{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-top:20px;
 }
-.about .about-content .text .info .list{
+.about .about-content  .info .list{
 	flex:0 0 calc(50% - 15%);
 	max-width: calc(50% - 15%);
 	padding-bottom: 2px;
